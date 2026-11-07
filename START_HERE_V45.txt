@@ -1,0 +1,22 @@
+TA-STORE-VN V45 — BAN SUA LOI TUONG TAC + ADMIN LOGIN
+
+CHAY DUNG CACH:
+1. Giai nen ZIP vao mot thu muc moi.
+2. Mo thu muc TuanAnhStore_V45_Admin_Login.
+3. Nhan dup start.bat. Khong mo index.html truc tiep.
+4. Cho CMD bao [OK] Website V45 va trinh duyet tu mo.
+5. GIU cua so CMD dang chay khi su dung website.
+
+Tai khoan local bootstrap:
+- Username: ADMIN
+- Password: tanhsito67
+
+V45 FIX QUAN TRONG:
+- Dong bo CSP hash tu dong voi inline JavaScript/CSS trong index.html.
+- Sua loi trinh duyet chan JavaScript lam tat ca nut khong click duoc.
+- Healthcheck launcher nhan dung version V45.
+- start.bat tu mo website local khi API san sang, truoc khi thu Cloudflare Tunnel.
+- Neu mo index.html bang file://, form dang nhap hien huong dan chay start.bat.
+
+Neu cong mac dinh 3000-3100 bi chiem, launcher se tu chon cong trong va in dia chi dung trong CMD.
+Dung stop.bat de dung server/watchdog.

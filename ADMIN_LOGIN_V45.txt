@@ -1,0 +1,11 @@
+TA-STORE-VN V45 - THAY DOI DANG NHAP ADMIN
+
+Tai khoan: ADMIN
+Mat khau local mac dinh: tanhsito67
+
+- Form dang nhap tu dien tai khoan ADMIN.
+- Mat khau van phai nhap tay va chi duoc kiem tra o backend.
+- Backend luu scrypt hash + salt, khong luu mat khau thuan trong config.json.
+- Nang configVersion len 4 de cap nhat config V42/V43/V44 sang tai khoan moi.
+- Dong bo API version o server.js, start.bat va select-port.ps1.
+- Railway production can dat TA_STORE_ADMIN_PASSWORD trong Variables; toi thieu 10 ky tu.

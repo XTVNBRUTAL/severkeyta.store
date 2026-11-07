@@ -1,0 +1,19 @@
+NGUYEN NHAN LOI V44
+Backend gui Content-Security-Policy voi script hash cu. index.html da thay doi sau khi hash duoc tinh; Chromium chan inline script. Khi script bi chan, bindEvents() khong chay nen nut bam khong hoat dong.
+
+CACH SUA V45
+server.js doc index.html va tinh SHA-256 hash cho tung inline <script> va <style> truoc khi gui CSP. Khong dung hash dong cung; CSP van khong bat unsafe-inline.
+
+KIEM TRA DA THUC HIEN
+- node --check server.js: OK
+- Node syntax check inline JavaScript: OK
+- HTTP GET /: 200
+- CSP inline script hash: khop
+- CSP inline style hash: khop
+- GET /api/health: 200
+- POST /api/admin/login voi tai khoan bootstrap: 200
+- GET /api/admin/me sau login: 200
+- GET /api/stats sau login: 200
+- POST /api/keys tao key thu: 201
+- GET /api/keys: 200
+- DELETE key thu: 200
